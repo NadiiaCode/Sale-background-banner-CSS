@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sale_banner">
+            <div class="sale_content">
+                <span>50% OFF</span>CHRISTMAS SALE
+                <span>40% OFF</span> 60% OFF
+                <span>&#9825; STAND A CHANCE TO WIN EXCITING PRIZES</span>
+                <span>20% OFF SUPER SALE</span> 70% OFF
+                <span>EXCITING PRIZES</span>
+                <span>SALE SALE SALE</span> 70% OFF
+                <span>BUY 2 GET 1 FREE</span>
+                <span>&#9825; CHRISTMAS GIFT FOR THE ENTIRE FAMILY &#9825;</span>
+                <span>SALE SALE SALE</span>25% OFF
+                <span>PERSONALIZED GIFTS</span> 70% OFF
+                <span>BUY 2 GET 1 FREE</span>
+                <span>CHRISTMAS GIFTS &#9825;</span>
+                <span>SALE SALE SALE</span>25% OFF
+                <span>50% OFF</span>CHRISTMAS SALE
+                <span>&#9825; 40% OFF SUPER SAVING SALE</span> &#9825; 60% OFF SALE
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            background-color: #000000;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .sale_banner {
+            width: 100vw;
+            height: 600px;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            text-shadow: -1px 0 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, 0 2px 0 #fff;
+            color: #000;
+        }
+        
+        .sale_content {
+            padding: 7px;
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        span {
+            letter-spacing: 4px;
+            animation: text_highlight 3s linear infinite running;
+        }
+        
+        span:nth-child(2n+1) {
+            animation-delay: 1s;
+        }
+        
+        span:nth-child(3n+2) {
+            animation-delay: 2s;
+        }
+        
+        @keyframes text_highlight {
+            0%,
+            19% {
+                color: #fff;
+            }
+            20%,
+            100% {
+                color: #000;
+            }
+        }
+    </style>
+</body>
+
+</html>
